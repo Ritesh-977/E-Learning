@@ -21,9 +21,13 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 app.use(cookieParser());
 
+const allowedOrigins = [
+ "https://studynest-bvz1.onrender.com",
+ "http://localhost:5173", 
+];
+
 app.use(cors({
-    origin: "https://studynest-bvz1.onrender.com",
-    origin:"http://localhost:5173",
+    origin: allowedOrigins,
     credentials:true
 }));
  
