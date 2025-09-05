@@ -27,7 +27,8 @@ app.get("/api/health", (req, res) => {
 
 const allowedOrigins = [
  "https://studynest-bvz1.onrender.com",
- "http://localhost:5173", 
+  "https://e-learning-dhr4.onrender.com",
+  "http://localhost:5173"
 ];
 
 app.use(cors({
